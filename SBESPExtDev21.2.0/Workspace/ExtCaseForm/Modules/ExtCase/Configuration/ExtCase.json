@@ -1,0 +1,38 @@
+{
+    "type": "object",
+    "properties": { 
+        "ExtCase.config": {
+            "group": "extensions",
+            "subtab": "ExtCase_subtab",
+            "type": "string",
+            "title": "Product/Module Setup",
+            "description": "Setup the dynamic options of Modules based on Product",
+            "items":{
+                "type":"object",
+                "properties":{
+                    "text":{
+                        "type":"string",
+                        "title":"Display Text",
+                        "mandatory":true
+                    },
+                    "value":{
+                        "type":"integer",
+                        "title":"Value",
+                        "mandatory":true
+                    },
+                    "id":{
+                        "type":"string",
+                        "title":"ID"
+                        
+                    },
+                    "parentid":{
+                        "type":"string",
+                        "title":"Parent ID"
+                    }
+                }
+            }
+            
+        }
+    }
+}
+

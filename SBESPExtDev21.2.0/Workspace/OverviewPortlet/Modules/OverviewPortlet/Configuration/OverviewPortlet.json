@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "OverviewPortlet.config": {
+            "group": "extensions",
+            "subtab": "OverviewPortlet_subtab",
+            "type": "string",
+            "title": "OverviewPortlet_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

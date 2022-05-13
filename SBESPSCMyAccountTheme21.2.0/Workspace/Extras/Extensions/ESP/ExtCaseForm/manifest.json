@@ -1,0 +1,85 @@
+{
+	"name": "ExtCaseForm",
+	"fantasyName": "ExtCaseForm",
+	"vendor": "ESP",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.2.0",
+		"SCS": ">=21.2.0"
+	},
+	"version": "1.0.0",
+	"description": "Customize Case form in MyAccount",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/ExtCase.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/ExtCase/Configuration/ExtCase.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/ExtCase/Templates/esp_extcaseform_extcase.tpl",
+					"Modules/ExtCase/Templates/esp_extcaseform_create.tpl",
+					"Modules/ExtCase/Templates/module_view.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"myaccount": "Modules/ExtCase/Sass/_extcaseform-extcase.scss"
+		},
+		"files": [
+			"Modules/ExtCase/Sass/_extcaseform-extcase.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/ExtCase/JavaScript/ESP.ExtCaseForm.ExtCase.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/ExtCase/JavaScript/ESP.ExtCaseForm.ExtCase.js",
+					"Modules/ExtCase/JavaScript/ExtCase.View.js",
+					"Modules/ExtCase/JavaScript/ESP.ExtCase.Form.View.js",
+					"Modules/ExtCase/JavaScript/ESP.ExtCaseForm.ExtCase.SS2Model.js",
+					"Modules/ExtCase/JavaScript/ESP.ExtCase.ModuleView.js",
+					"Modules/ExtCase/JavaScript/ESP.ExtCaseModule.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/ExtCase/SuiteScript/ESP.ExtCaseForm.ExtCase.js",
+		"files": [
+			"Modules/ExtCase/SuiteScript/ESP.ExtCaseForm.ExtCase.js",
+			"Modules/ExtCase/SuiteScript/ExtCase.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/ExtCase/SuiteScript2/ExtCase.Service.ss",
+			"Modules/ExtCase/SuiteScript2/ExtCase.Model.js",
+			"Modules/ExtCase/SuiteScript2/ExtCaseModule.Service.ss",
+			"Modules/ExtCase/SuiteScript2/ExtCaseModule.Model.js"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/ESP/ExtCaseForm@1.0.0",
+	"activation_id": "9",
+	"extension_id": "2901"
+}

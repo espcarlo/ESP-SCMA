@@ -1,0 +1,78 @@
+{
+	"name": "OverviewPortlet",
+	"fantasyName": "OverviewPortlet",
+	"vendor": "ESP",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.2.0",
+		"SCS": ">=21.2.0"
+	},
+	"version": "1.0.0",
+	"description": "display additional info in overview",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/OverviewPortlet.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/OverviewPortlet/Configuration/OverviewPortlet.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/OverviewPortlet/Templates/esp_overviewportlet_overviewportlet.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"myaccount": "Modules/OverviewPortlet/Sass/_overviewportlet-overviewportlet.scss"
+		},
+		"files": [
+			"Modules/OverviewPortlet/Sass/_overviewportlet-overviewportlet.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"myaccount": "Modules/OverviewPortlet/JavaScript/ESP.OverviewPortlet.OverviewPortlet.js"
+		},
+		"application": {
+			"myaccount": {
+				"files": [
+					"Modules/OverviewPortlet/JavaScript/ESP.OverviewPortlet.OverviewPortlet.js",
+					"Modules/OverviewPortlet/JavaScript/OverviewPortlet.View.js",
+					"Modules/OverviewPortlet/JavaScript/ESP.OverviewPortlet.OverviewPortlet.Model.js",
+					"Modules/OverviewPortlet/JavaScript/ESP.OverviewPortlet.OverviewPortlet.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/OverviewPortlet/SuiteScript/ESP.OverviewPortlet.OverviewPortlet.js",
+		"files": [
+			"Modules/OverviewPortlet/SuiteScript/ESP.OverviewPortlet.OverviewPortlet.js",
+			"Modules/OverviewPortlet/SuiteScript/OverviewPortlet.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/OverviewPortlet/SuiteScript2/OverviewPortlet.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/ESP/OverviewPortlet@1.0.0",
+	"activation_id": "9",
+	"extension_id": "3001"
+}

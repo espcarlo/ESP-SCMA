@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "FooterLinks.config": {
+            "group": "extensions",
+            "subtab": "FooterLinks_subtab",
+            "type": "string",
+            "title": "FooterLinks_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

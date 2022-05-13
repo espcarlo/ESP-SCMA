@@ -1,0 +1,34 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+
+.overview-portlet-header{
+	@extend .overview-shipping-header;
+}
+.overview-portlet-card {
+    @extend .overview-shipping-card;
+}
+.overview-portlet-card-content {
+	@extend .overview-shipping-card-content;
+	//@extend .info-card;
+	width: 100%;
+	border: none;
+	padding: 0px;
+	min-height: 283px;
+}
+.overview-portlet-card {
+    @extend .overview-shipping-card;
+}
+.overview-portlet-outstanding-balance-header{
+	font-weight: $sc-font-weight-bold;
+}
+.overview-portlet-card-button-make-payment-container {
+	@extend .overview-shipping-card-button-edit;
+	padding: 10px 0 0 0;
+}

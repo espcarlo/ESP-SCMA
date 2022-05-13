@@ -1,0 +1,27 @@
+#modal{
+    .modal-dialog{
+        @media(min-width:$screen-sm){
+            width:760px;
+        }
+        @media(min-width:$screen-md){
+            width:990px;
+        }
+    }
+}
+
+#main-content{
+    h1{
+        padding-bottom:10px;
+        color: #0b367c;
+    }
+    .et_pb_module.et_pb_text{
+        margin-bottom: 2.75%;
+    } 
+    p{
+        padding-bottom: 1em;
+        overflow-wrap: break-word;
+    }
+    ul > li{
+        list-style:disc inside;
+    }
+}

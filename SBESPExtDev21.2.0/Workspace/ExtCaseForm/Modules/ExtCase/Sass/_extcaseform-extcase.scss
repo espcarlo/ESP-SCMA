@@ -1,0 +1,51 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.extcase-info-card {
+    @extend .info-card;
+}
+
+.extcase-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}
+.case-form-header{
+	@extend .medium-title;
+	display: inline-block;
+	width:100%;
+}
+.case-form-title{
+	@extend .list-header-title;
+	float: left;
+}
+.case-form{
+	@extend .box-column;
+}
+
+.case-form-control-group {
+    @extend .control-group;
+    margin: $sc-margin-lv3 0 0 0;
+}
+
+.case-form-select,
+.case-form-input {
+	
+    @extend .input-large;
+	
+}
+
+.case-new-form-required {
+    @extend .required;
+}
+
+.case-form-submit {
+    @extend .button-primary;
+    @extend .button-medium;
+}

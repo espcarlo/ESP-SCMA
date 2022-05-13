@@ -1,0 +1,16 @@
+{
+  "generator-extension": {
+    "ext_application": {
+      "ExtCaseForm": [
+        "myaccount"
+      ],
+      "OverviewPortlet": [
+        "myaccount"
+      ],
+      "ESPSCMAFooterLinks": [
+        "myaccount",
+        "checkout"
+      ]
+    }
+  }
+}

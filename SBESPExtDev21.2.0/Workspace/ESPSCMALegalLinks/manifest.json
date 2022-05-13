@@ -1,0 +1,100 @@
+{
+    "name": "ESPSCMALegalLinks",
+    "fantasyName": "ESPSCMALegalLinks",
+    "vendor": "ESP",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=21.2.0",
+        "SCS": ">=21.2.0"
+    },
+    "version": "1.0.1",
+    "description": "workaround for creating terms and condition and Privacy links",
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/FooterLinks.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/FooterLinks/Configuration/FooterLinks.json"
+        ]
+    },
+    "templates": {
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/FooterLinks/Templates/esp_espscmafooterlinks_footerlinks.tpl",
+                    "Modules/FooterLinks/Templates/esp_espscmamodalmessage.tpl",
+                    "Modules/FooterLinks/Templates/esp_espscamaloginlinks_loginlinks.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/FooterLinks/Templates/esp_espscmafooterlinks_footerlinks.tpl",
+                    "Modules/FooterLinks/Templates/esp_espscmamodalmessage.tpl",
+                    "Modules/FooterLinks/Templates/esp_espscamaloginlinks_loginlinks.tpl"
+                ]
+            }
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "myaccount": "Modules/FooterLinks/Sass/_espscmafooterlinks-footerlinks.scss",
+            "checkout": "Modules/FooterLinks/Sass/_espscmafooterlinks-footerlinks.scss"
+        },
+        "files": [
+            "Modules/FooterLinks/Sass/_espscmafooterlinks-footerlinks.scss",
+            "Modules/FooterLinks/Sass/_espscmaloginlinks-loginlinks.scss",
+            "Modules/FooterLinks/Sass/_espscmamodal-modal.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "myaccount": "Modules/FooterLinks/JavaScript/ESP.ESPSCMAFooterLinks.FooterLinks.js",
+            "checkout": "Modules/FooterLinks/JavaScript/ESP.ESPSCMAFooterLinks.FooterLinks.js"
+        },
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/FooterLinks/JavaScript/ESP.ESPSCMAFooterLinks.FooterLinks.js",
+                    "Modules/FooterLinks/JavaScript/FooterLinks.View.js",
+                    "Modules/FooterLinks/JavaScript/ESP.ESPSCMAFooterLinks.FooterLinks.Model.js",
+                    "Modules/FooterLinks/JavaScript/ESP.ESPSCMAFooterLinks.FooterLinks.SS2Model.js",
+                    "Modules/FooterLinks/JavaScript/ESP.ESPSCMAFooterLinks.ModalMessage.js",
+                    "Modules/FooterLinks/JavaScript/ESP.ESPSCMALoginLinks.View.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/FooterLinks/JavaScript/ESP.ESPSCMAFooterLinks.FooterLinks.js",
+                    "Modules/FooterLinks/JavaScript/FooterLinks.View.js",
+                    "Modules/FooterLinks/JavaScript/ESP.ESPSCMAFooterLinks.FooterLinks.Model.js",
+                    "Modules/FooterLinks/JavaScript/ESP.ESPSCMAFooterLinks.FooterLinks.SS2Model.js",
+                    "Modules/FooterLinks/JavaScript/ESP.ESPSCMAFooterLinks.ModalMessage.js",
+                    "Modules/FooterLinks/JavaScript/ESP.ESPSCMALoginLinks.View.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/FooterLinks/SuiteScript/ESP.ESPSCMAFooterLinks.FooterLinks.js",
+        "files": [
+            "Modules/FooterLinks/SuiteScript/ESP.ESPSCMAFooterLinks.FooterLinks.js",
+            "Modules/FooterLinks/SuiteScript/FooterLinks.ServiceController.js"
+        ]
+    },
+    "suitescript2": {
+        "files": [
+            "Modules/FooterLinks/SuiteScript2/FooterLinks.Service.ss"
+        ]
+    }
+}
