@@ -2,14 +2,15 @@
     "name": "ESPSCMALegalLinks",
     "fantasyName": "ESPSCMALegalLinks",
     "vendor": "ESP",
+    "version": "1.0.1",
     "type": "extension",
     "target": "SCA,SCS",
     "target_version": {
         "SCA": ">=21.2.0",
         "SCS": ">=21.2.0"
     },
-    "version": "1.0.1",
     "description": "workaround for creating terms and condition and Privacy links",
+    "skins": [],
     "assets": {
         "img": {
             "files": []
@@ -26,6 +27,17 @@
     "configuration": {
         "files": [
             "Modules/FooterLinks/Configuration/FooterLinks.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "myaccount": "Modules/FooterLinks/Sass/_espscmafooterlinks-footerlinks.scss",
+            "checkout": "Modules/FooterLinks/Sass/_espscmafooterlinks-footerlinks.scss"
+        },
+        "files": [
+            "Modules/FooterLinks/Sass/_espscmafooterlinks-footerlinks.scss",
+            "Modules/FooterLinks/Sass/_espscmaloginlinks-loginlinks.scss",
+            "Modules/FooterLinks/Sass/_espscmamodal-modal.scss"
         ]
     },
     "templates": {
@@ -45,17 +57,6 @@
                 ]
             }
         }
-    },
-    "sass": {
-        "entry_points": {
-            "myaccount": "Modules/FooterLinks/Sass/_espscmafooterlinks-footerlinks.scss",
-            "checkout": "Modules/FooterLinks/Sass/_espscmafooterlinks-footerlinks.scss"
-        },
-        "files": [
-            "Modules/FooterLinks/Sass/_espscmafooterlinks-footerlinks.scss",
-            "Modules/FooterLinks/Sass/_espscmaloginlinks-loginlinks.scss",
-            "Modules/FooterLinks/Sass/_espscmamodal-modal.scss"
-        ]
     },
     "javascript": {
         "entry_points": {
@@ -92,6 +93,7 @@
             "Modules/FooterLinks/SuiteScript/FooterLinks.ServiceController.js"
         ]
     },
+    "local_folder": "Workspace\\ESPSCMALegalLinks",
     "suitescript2": {
         "files": [
             "Modules/FooterLinks/SuiteScript2/FooterLinks.Service.ss"

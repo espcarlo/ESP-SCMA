@@ -31,7 +31,8 @@
         "extensions_path": [
             "Workspace/ESPSCMALegalLinks",
             "Workspace/ExtCaseForm",
-            "Workspace/OverviewPortlet"
+            "Workspace/OverviewPortlet",
+            "Workspace/SCMyAccount"
         ],
         "theme_path": "Workspace/Extras/SCMyAccount",
         "overrides_path": "Workspace/Extras/SCMyAccount/Overrides"
@@ -91,10 +92,10 @@
         "account": "5116832-SB2",
         "hostname": "5116832-SB2.restlets.api.netsuite.com",
         "website": 4,
-        "target_folder": {
-            "parentId": "-15",
-            "folderName": "Deploy_Extensions"
-        }
+        "domain": "scama.erpsuccesspartner.com",
+        "webapp_id": "247946",
+        "ssp_folder": "247946",
+        "is_scis": false
     },
     "nsdeployPath": ".nsdeploy"
 }
